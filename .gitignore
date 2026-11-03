@@ -1,0 +1,13 @@
+# Source showcase: only explicitly listed documentation and C# scripts are tracked.
+*
+!.gitignore
+!README.md
+!CREDITS.md
+!Scripts/
+!Scripts/*.cs
+!docs/
+!docs/*.png
+!docs/*.jpg
+!docs/*.jpeg
+!docs/*.gif
+!docs/*.webp
