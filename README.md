@@ -43,16 +43,30 @@ Download the playable build from [Google Drive](https://drive.google.com/file/d/
 
 Unity Editor is not required to play the Windows build.
 
-GitHub's **Download ZIP** option contains only the scripts and documentation in this repository. Use the Google Drive link above to download the playable game.
+GitHub's **Download ZIP** option contains the Unity project source. Use the Google Drive link above to download the ready-to-play Windows build.
+
+## Open the project in Unity
+
+1. Clone this repository, or download and extract its source ZIP:
+
+   ```bash
+   git clone https://github.com/HiHonnn/Rocket-Boost.git
+   ```
+
+2. In Unity Hub, add the repository folder as an existing project.
+3. Open it with Unity **6000.5.2f1** and allow Unity to restore packages and import assets.
+4. Open `Assets/Scenes/Map1.unity` and press **Play**.
+
+The build configuration includes `Map1`, `Map2`, and `Map3` in that order. To create a Windows build, select the Windows build profile and build these scenes.
 
 ## Code to explore
 
 | Script | Responsibility |
 | --- | --- |
-| [Movement.cs](Scripts/Movement.cs) | Thrust, rotation, engine audio, and thruster effects |
-| [CollisionHandler.cs](Scripts/CollisionHandler.cs) | Crash/success sequences, scene restart, and level progression |
-| [Oscillator.cs](Scripts/Oscillator.cs) | Moving obstacles between two positions |
-| [TutorialUI.cs](Scripts/TutorialUI.cs) | Brief on-screen controls panel in the current source version |
+| [Movement.cs](Assets/Scripts/Movement.cs) | Thrust, rotation, engine audio, and thruster effects |
+| [CollisionHandler.cs](Assets/Scripts/CollisionHandler.cs) | Crash/success sequences, scene restart, and level progression |
+| [Oscillator.cs](Assets/Scripts/Oscillator.cs) | Moving obstacles between two positions |
+| [TutorialUI.cs](Assets/Scripts/TutorialUI.cs) | Brief on-screen controls panel in the current source version |
 
 ## Learning context and contribution
 
@@ -62,8 +76,8 @@ This project records my practice with Rigidbody movement, collision handling, sc
 
 ## Repository scope and credits
 
-This repository contains gameplay scripts and portfolio documentation for code review. It does **not** contain the complete Unity project, scenes, prefabs, or third-party art/audio assets, and cannot be opened as a playable project directly in Unity Editor.
+This repository contains the Unity project source: `Assets`, `Packages`, and `ProjectSettings`, including scenes, prefabs, gameplay scripts, and asset metadata. Unity regenerates local caches such as `Library` when the project is opened. Windows builds are available separately through the Google Drive link above.
 
 - Course and learning reference: [GameDev.tv](https://www.gamedev.tv/).
-- Third-party assets remain subject to their respective licenses and are not included in this source showcase.
+- Art, models, audio, and other third-party content, including the GameDev.tv starter assets, remain subject to their respective licenses.
 - Credits do not grant permission to redistribute course materials or third-party assets.
